@@ -1,1 +1,1 @@
-### My own Site Teamplate 
+### My own Site Template 
