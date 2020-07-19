@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   listItem: {
-    margin: "2rem",
+    margin: "1rem",
   },
 }));
 

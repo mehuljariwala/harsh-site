@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import { Grid, Button } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,21 +24,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   contactMe: {
-    border: "1px solid gray",
     color: "black",
-    fontWeight: "700",
-    minHeight: "70px",
-    width: "170px",
-    boxShadow: "none",
-    marginLeft: "0.8rem",
+    padding: "1rem",
+    border: "1px solid gray",
     background: "transparent",
     transition: "0.5s",
-    borderRadius: "15px",
-    [theme.breakpoints.down("md")]: {
-      width: "auto",
-      minHeight: "auto",
-      padding: "1rem",
-    },
+    fontWeight: "700",
+    marginLeft: "0.8rem",
+    borderRadius: "7px",
+    textDecoration: "none",
     "&:hover": {
       backgroundColor: "black",
       color: "white",
@@ -52,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   contactMeContainer: {
+    marginTop: "1rem",
     [theme.breakpoints.down("md")]: {
       textAlign: "center",
     },
@@ -71,6 +67,22 @@ export default function Content() {
         </Typography>
 
         <Grid container className={`${classes.grid} ${classes.marginLeft}`}>
+          <Grid item md={12} className={classes.marBottom}>
+            <Typography component="p">
+              Product Engineer at{" "}
+              <Link
+                target="_blank"
+                to={{ pathname: "https://www.fitbots.com/" }}
+                className={classes.companyName}
+              >
+                Fitbots
+              </Link>
+              <span role="img" aria-label="I'm also">
+                {" "}
+                👔
+              </span>
+            </Typography>
+          </Grid>
           <Grid item md={12} className={classes.marBottom}>
             <Typography component="p">
               I'm also currently available for new projects.
@@ -99,7 +111,9 @@ export default function Content() {
         </Grid>
 
         <div className={classes.contactMeContainer}>
-          <Button className={classes.contactMe}>Contact me</Button>
+          <a href="mailto:mjariwala98@gmail.com" className={classes.contactMe}>
+            Contact me
+          </a>
         </div>
       </Container>
     </div>
