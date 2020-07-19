@@ -1,9 +1,10 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import { Grid, Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Grid } from "@material-ui/core";
+import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -56,6 +57,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Content() {
   const classes = useStyles();
+  const theme = useTheme();
+  const isPhone = useMediaQuery(theme.breakpoints.down("md"), {
+    defaultMatches: true,
+  });
   return (
     <div className={classes.root}>
       <Container maxWidth="lg">
@@ -102,16 +107,25 @@ export default function Content() {
           </Grid>
           <Grid item md={12} className={classes.marBottom}>
             <Typography component="p" aria-label="Fun fact">
-              Fun fact about me is i am not drink coffee at all.
-              <span role="img" aria-label="Fun fact about">
-                😄
+              Contact me any kind of website and software developement.
+              <span role="img" aria-label="contact me">
+                📱
               </span>
             </Typography>
           </Grid>
         </Grid>
 
         <div className={classes.contactMeContainer}>
-          <a href="mailto:mjariwala98@gmail.com" className={classes.contactMe}>
+          <a
+            href={
+              isPhone
+                ? "https://wa.link/66lppr"
+                : "mailto:mjariwala98@gmail.com"
+            }
+            rel="noopener noreferrer"
+            target="_blank"
+            className={classes.contactMe}
+          >
             Contact me
           </a>
         </div>
