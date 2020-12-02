@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "./components/Header";
-import Content from "./components/Content";
+import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer";
+import Home from "./components/Home/Home.jsx";
 
 function App() {
   return (
     <div style={{ userSelect: "none" }}>
       <Header />
-      <Content />
+      <Home />
       <Footer />
     </div>
   );
