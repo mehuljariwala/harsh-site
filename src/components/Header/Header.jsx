@@ -20,13 +20,7 @@ function Header() {
         <Container maxWidth="lg">
           <Toolbar>
             <Box className={classes.grow}>
-              <img
-                src={Logo}
-                alt="logo"
-                width={50}
-                height={50}
-                className={classes.imgLogo}
-              />
+              <img src={Logo} alt="logo" width={80} height={80} />
             </Box>
             <Box className={classes.sectionDesktop}>
               <HeaderLink />
