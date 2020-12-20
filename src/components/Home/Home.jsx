@@ -1,31 +1,36 @@
 import React from "react";
-import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
 import { Grid, Box } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import { useMediaQuery } from "@material-ui/core";
 import { useStyles, rowStyles, contactMeStyles } from "./HomeStyles.jsx";
 import { homeContent } from "../../content/content";
+import MenSvg from "../../assets/svg/men.jsx";
 
 const Home = () => {
   const classes = useStyles();
   return (
-    <Box component="section" className={classes.root}>
-      <Container maxWidth="lg">
-        <Typography variant="h5" gutterBottom className={classes.intro}>
-          Hello! I'm
-        </Typography>
-        <Typography variant="h1" gutterBottom className={classes.nameLabel}>
-          Mehul
-        </Typography>
-        <Grid container className={classes.gridContainer}>
-          {homeContent.map((data, index) => (
-            <Row data={data} key={index} />
-          ))}
+    <>
+      <Grid container>
+        <Grid item md={6} xs={12}>
+          <Typography variant="h5" gutterBottom className={classes.intro}>
+            Hello! I'm
+          </Typography>
+          <Typography variant="h1" gutterBottom className={classes.nameLabel}>
+            Mehul
+          </Typography>
+          <Grid container className={classes.gridContainer}>
+            {homeContent.map((data, index) => (
+              <Row data={data} key={index} />
+            ))}
+          </Grid>
+          <ContactMe />
         </Grid>
-        <ContactMe />
-      </Container>
-    </Box>
+        <Grid item md={6} className={classes.menSvg}>
+          <MenSvg />
+        </Grid>
+      </Grid>
+    </>
   );
 };
 

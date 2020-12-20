@@ -63,7 +63,7 @@ const headerLinkStyles = makeStyles((theme) => ({
     padding: 12,
     transition: "0.5s",
     [theme.breakpoints.down("md")]: {
-      marginRight: "0rem",
+      marginRight: 16,
     },
     "&:hover": {
       background: "black",

@@ -9,6 +9,12 @@ module.exports = {
     filename: "main.js",
     publicPath: "/",
   },
+  resolve: {
+    extensions: ["*", ".js", ".jsx"],
+    alias: {
+      "@": path.resolve(__dirname, "src"), // shortcut to reference src folder from anywhere
+    },
+  },
   devServer: {
     historyApiFallback: true,
     hot: true,

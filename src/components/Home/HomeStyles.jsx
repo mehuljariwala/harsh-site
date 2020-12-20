@@ -11,10 +11,15 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "0.8rem",
   },
   gridContainer: {
-    width: "40%",
+    width: "80%",
     marginLeft: "0.8rem",
     [theme.breakpoints.down("md")]: {
       width: "95%",
+    },
+  },
+  menSvg: {
+    [theme.breakpoints.down("md")]: {
+      display: "none",
     },
   },
   nameLabel: {
