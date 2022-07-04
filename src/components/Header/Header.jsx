@@ -45,9 +45,6 @@ function Header() {
                 </Link>
               </IconButton>
             </Box>
-            <Box className={classes.sectionMobile}>
-             
-            </Box>
           </Toolbar>
         </Container>
       </AppBar>
