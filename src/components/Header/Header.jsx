@@ -8,7 +8,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Logo from "../../assets/img/logo250.png";
 import { Link } from "react-router-dom";
 import PdfFile from "../../assets/resume.pdf";
-import { useStyles, headerLinkStyles } from "./HeaderStyles.jsx";
+import { useStyles } from "./HeaderStyles.jsx";
 import { Box } from "@material-ui/core";
 
 function Header() {
@@ -25,7 +25,6 @@ function Header() {
               </Link>
             </Box>
             <Box className={classes.sectionDesktop}>
-              <HeaderLink />
               <IconButton aria-label="delete">
                 <Link
                   to={{
@@ -56,23 +55,5 @@ function Header() {
   );
 }
 
-const HeaderLink = () => {
-  const classes = headerLinkStyles();
-  return (
-    <>
-      <Link to="/projects" className={classes.link}>
-        Projects
-      </Link>
-      <Link
-        to={PdfFile}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={classes.link}
-      >
-        Resume
-      </Link>
-    </>
-  );
-};
 
 export default Header;
