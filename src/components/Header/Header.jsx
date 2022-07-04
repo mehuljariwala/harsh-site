@@ -46,7 +46,7 @@ function Header() {
               </IconButton>
             </Box>
             <Box className={classes.sectionMobile}>
-              <HeaderLink />
+             
             </Box>
           </Toolbar>
         </Container>
