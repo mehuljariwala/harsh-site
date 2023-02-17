@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
   appBar: {
     color: "black",
-    backgroundColor: "transparent",
+    backgroundColor: "#24292f",
     boxShadow: "none",
     borderBottom: "1px solid whitesmoke",
   },
@@ -26,10 +26,14 @@ const useStyles = makeStyles((theme) => ({
   },
 
   linkedInIcon: {
-    fill: "rgb(17, 82, 147)",
+    fill: "white",
+    height: 32,
+    width: 32,
   },
   gitHubIcon: {
-    fill: "rgba(0, 0, 0, 0.87)",
+    fill: "white",
+    height: 28,
+    width: 28,
   },
   imgLogo: {
     borderRadius: "50%",

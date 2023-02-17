@@ -5,11 +5,11 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import Logo from "../../assets/img/logo250.png";
+// import Logo from "../../assets/img/logo250.png";
 import { Link } from "react-router-dom";
 import PdfFile from "../../assets/resume.pdf";
 import { useStyles } from "./HeaderStyles.jsx";
-import { Box } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 
 function Header() {
   const classes = useStyles();
@@ -20,16 +20,15 @@ function Header() {
         <Container maxWidth="lg">
           <Toolbar>
             <Box className={classes.grow}>
-              <Link to="/">
-                <img height="80px" src={Logo} alt="logo" />
-              </Link>
+              {/* <Typography style={{ fontSize: "2rem" }}>H</Typography> */}
+              {/* <img height="80px" src={Logo} alt="logo" /> */}
             </Box>
             <Box className={classes.sectionDesktop}>
               <IconButton aria-label="delete">
                 <Link
                   to={{
                     pathname:
-                      "https://www.linkedin.com/in/mehul-jariwala-352a01132/",
+                      "https://www.linkedin.com/in/harish-c-t-7ab2a617a/",
                   }}
                   target="_blank"
                 >
@@ -39,7 +38,7 @@ function Header() {
               <IconButton aria-label="delete">
                 <Link
                   target="_blank"
-                  to={{ pathname: "https://github.com/mehuljariwala" }}
+                  to={{ pathname: "https://github.com/harisht-ctl" }}
                 >
                   <GitHubIcon className={classes.gitHubIcon} />
                 </Link>
@@ -51,6 +50,5 @@ function Header() {
     </Box>
   );
 }
-
 
 export default Header;
