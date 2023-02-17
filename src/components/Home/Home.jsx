@@ -17,12 +17,68 @@ const Home = () => {
             Hello! I'm
           </Typography>
           <Typography variant="h1" gutterBottom className={classes.nameLabel}>
-            Mehul
+            Harish
           </Typography>
           <Grid container className={classes.gridContainer}>
             {homeContent.map((data, index) => (
               <Row data={data} key={index} />
             ))}
+            <ul>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  JavaScript, Typescript, HTML, CSS, SCSS, JSON, Tailwind CSS
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  AngularJS, Angular 9,10,11
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  React.js, React Redux, React Hook, Ionic, React Native
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  Node.js, Express, Koa.js, Nest.js
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  MySQL, MongoDB, Redis
+                </Typography>
+              </li>
+              <li>
+                <Typography
+                  component="p"
+                  id="freelancer"
+                  style={{ fontWeight: 700 }}
+                >
+                  Github, Bitbucket, Jira, AWS, Docker
+                </Typography>
+              </li>
+            </ul>
           </Grid>
           <ContactMe />
         </Grid>
@@ -45,9 +101,7 @@ const ContactMe = () => {
   return (
     <Box className={classes.contactMeBox}>
       <a
-        href={
-          isPhone ? "https://wa.link/66lppr" : "mailto:mjariwala98@gmail.com"
-        }
+        href={"mailto:tharibabu.dev@gmail.com"}
         rel="noopener noreferrer"
         target="_blank"
         className={classes.contactMe}

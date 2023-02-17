@@ -4,11 +4,13 @@ import cmg from "../assets/img/cmg.jpg";
 
 const homeContent = [
   {
-    primaryLabelText: "Freelancer ( Fullstack Developer ).",
+    primaryLabelText:
+      "full stack developer with 8+ years of extensive programming experience.",
     secondaryLabelText: "👔",
   },
   {
-    primaryLabelText: "I'm also currently available for new projects.",
+    primaryLabelText:
+      "I work quickly and quality is my top priority. I ask many questions so that I fully understand your business needs. It may help me to finish your work with satisfaction.",
     secondaryLabelText: "😎",
   },
   {
@@ -17,9 +19,8 @@ const homeContent = [
     secondaryLabelText: "🚀",
   },
   {
-    primaryLabelText:
-      "Contact me any kind of website and software developement.",
-    secondaryLabelText: "📱",
+    primaryLabelText: "My main expert skills are following:.",
+    secondaryLabelText: "",
   },
 ];
 
