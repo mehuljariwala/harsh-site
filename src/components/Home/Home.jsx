@@ -6,6 +6,7 @@ import { useMediaQuery } from "@material-ui/core";
 import { useStyles, rowStyles, contactMeStyles } from "./HomeStyles.jsx";
 import { homeContent } from "../../content/content";
 import MenSvg from "../../assets/svg/men.jsx";
+import GirlIcon from "../../assets/svg/girl.jsx";
 
 const Home = () => {
   const classes = useStyles();
@@ -17,7 +18,7 @@ const Home = () => {
             Hello! I'm
           </Typography>
           <Typography variant="h1" gutterBottom className={classes.nameLabel}>
-            Harish
+            Mounika
           </Typography>
           <Grid container className={classes.gridContainer}>
             {homeContent.map((data, index) => (
@@ -30,19 +31,22 @@ const Home = () => {
                   id="freelancer"
                   style={{ fontWeight: 700 }}
                 >
-                  JavaScript, Typescript, HTML, CSS, SCSS, JSON, Tailwind CSS
+                  <b>Primary Skills:</b> Java, HTML,CSS, Angular, Spring MVC,
+                  Spring Boot, JavaScript, SQL.
+                  <br />
                 </Typography>
               </li>
               <li>
                 <Typography
                   component="p"
                   id="freelancer"
-                  style={{ fontWeight: 700 }}
+                  style={{ fontWeight: 700, margin: "2rem 0rem" }}
                 >
-                  AngularJS, Angular 9,10,11
+                  <b>Secondary Skills:</b> Azure, TypeScript, React, AWS, NoSql,
+                  Spark
                 </Typography>
               </li>
-              <li>
+              {/* <li>
                 <Typography
                   component="p"
                   id="freelancer"
@@ -77,13 +81,14 @@ const Home = () => {
                 >
                   Github, Bitbucket, Jira, AWS, Docker
                 </Typography>
-              </li>
+              </li> */}
             </ul>
           </Grid>
           <ContactMe />
         </Grid>
         <Grid item md={6} className={classes.menSvg}>
-          <MenSvg />
+          {/* <MenSvg /> */}
+          <GirlIcon />
         </Grid>
       </Grid>
     </>
@@ -101,7 +106,7 @@ const ContactMe = () => {
   return (
     <Box className={classes.contactMeBox}>
       <a
-        href={"mailto:tharibabu.dev@gmail.com"}
+        href={"mailto:mounikap670@gmail.com"}
         rel="noopener noreferrer"
         target="_blank"
         className={classes.contactMe}

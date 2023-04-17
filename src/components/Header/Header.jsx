@@ -27,22 +27,21 @@ function Header() {
               <IconButton aria-label="delete">
                 <Link
                   to={{
-                    pathname:
-                      "https://www.linkedin.com/in/harish-c-t-7ab2a617a/",
+                    pathname: "https://www.linkedin.com/in/mounika-p777",
                   }}
                   target="_blank"
                 >
                   <LinkedInIcon className={classes.linkedInIcon} />
                 </Link>
               </IconButton>
-              <IconButton aria-label="delete">
+              {/* <IconButton aria-label="delete">
                 <Link
                   target="_blank"
                   to={{ pathname: "https://github.com/harisht-ctl" }}
                 >
                   <GitHubIcon className={classes.gitHubIcon} />
                 </Link>
-              </IconButton>
+              </IconButton> */}
             </Box>
           </Toolbar>
         </Container>

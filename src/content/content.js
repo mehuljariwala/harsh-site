@@ -5,7 +5,7 @@ import cmg from "../assets/img/cmg.jpg";
 const homeContent = [
   {
     primaryLabelText:
-      "full stack developer with 8+ years of extensive programming experience.",
+      "full stack developer with 7+ years of extensive programming experience.",
     secondaryLabelText: "👔",
   },
   {
